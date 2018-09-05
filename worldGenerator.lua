@@ -18,7 +18,7 @@ end
 function generateRooms( numberOfRooms, RoomSizeX, RoomSizeY, worldX, worldY)
     local rooms = {};
 
-    for i = 0, numberOfRooms do
+    for i = 0, numberOfRooms-1 do
         local room = newRoom();
 
         room.size.w = 3 + math.random(RoomSizeX);
